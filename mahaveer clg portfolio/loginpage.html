@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100px;
+            height:100vh;
+            background-color:rgb(245, 142, 104);
+        }
+        .container{
+            width: 300px;
+            height: 400px;
+            border:solid 2px grey;
+            border-radius: 9px;
+            box-shadow: 4px 4px 4px black;
+            background-color: rgb(194, 91, 54);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            text-align:center;
+            
+        }
+        p{
+            font-size: large;
+            margin-right: 169px;
+            margin-top: 30px;
+        }
+        input{
+            
+            padding: 10px 15px;
+            border-radius: 9px;
+            font-size:large;
+            border:none;
+        }
+        button{
+            position:absolute;
+            bottom:20px;
+            left:50%;
+            padding: 10px 15px;
+            border-radius: 9px;
+            font-size: x-large;
+            background-color: aqua;
+            transform:translateX(-50%);
+            
+
+        }
+        button a{
+            text-decoration:none;
+            color:black;
+        }
+     
+    </style>
+    <head>
+
+    </head>
+    <body>
+        <div class="container">
+            <p>Name:</p>
+            <form><input type="text" placeholder="Enter username"></form>
+<p>password</p>
+<form><input type="password" placeholder="password">
+
+</form>
+<button><a href="firsrpage.html">login</a></button>
+        </div>
+
+    </body>
+</html>

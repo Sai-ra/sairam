@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(white,orangered);
+}
+.upper-part{
+    text-align:center;
+}
+.upper-part h2{
+    color:orangered;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px black;
+    font-style: 'poppins';
+}
+/* anchor tag change*/
+button{
+    position:relative;
+}
+button::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height: 4px;
+    background-color: black;
+    left:0;
+    top:-4px;
+    transform:scaleX(0);
+    transition: all ease-out 600ms
+    
+}
+
+button:hover::after{
+    transform:scaleX(1);
+}
+.nav-bar{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-around;
+    background-color: orange;
+}
+.content{
+    position:absolute;
+    border-radius: 9px;
+    box-shadow: 9px 9px 9px rgb(70, 62, 62);
+    transform:scaleY(0);
+
+}
+.sa:hover .content{
+    transform:scaleY(1);
+}
+.content ul{
+    list-style-type: none;
+    width: 160px;
+    background-color: white;
+    border-radius:10px;
+   
+}
+.content a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+}
+.content ul li{
+    padding:15px 15px;
+    width: 160px;
+    
+    background-color: white;
+    color:black;
+}
+.content ul li:hover{
+    background-color: hsl(0, 6%, 55%);
+    cursor:pointer;
+}
+.nav-bar button{
+    width: 150px;
+    text-align: center;
+    font-size: large;
+    color:black;
+    position:relative;
+    padding: 10px 10px;
+    background-color: transparent;
+    border:none;
+    
+}
+.nav-bar button:hover{
+    background-color: orangered;
+    cursor:pointer;
+    cursor:pointer;
+}
+
+ .middle{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    gap: 3em;
+ }
+.left-side{
+    z-index: -7;
+    position:relative; 
+    height: 500px;
+    
+
+
+ }
+
+ .left-side .photo-one{
+    width: 500px;
+    z-index:-56;
+    transition: all 500ms;
+    /* position:absolute; */
+    border-radius: 9px;
+ }
+
+
+ .photo-two{
+    position:absolute;
+    width: 500px;
+    border-radius: 20px;
+    right:0;
+    bottom:0;
+ }
+ .right-side{
+    z-index: -3;
+    height: 500px;
+    position:relative;
+
+    
+
+ }
+.upper h3{
+    font-weight: 800;
+    font-style:arial;
+    font-size: xx-large;
+    color:orangered;
+    text-shadow: 3px 3px 3px black;
+}
+.black{
+    color:black;
+    text-shadow: none;
+    font-style:italic;
+}
+.upper .para{
+    margin-top: 20px;
+    color:grey;
+    font-size:larger;
+
+}
+.samosa-one h3{
+    margin-top: 30px;
+ font-size: 50px;
+ color:black;
+ font-weight: 500;
+ max-width: 300px;
+ text-shadow: none;
+ 
+}
+.engineer{
+    font-weight: 800;
+}
+.s{
+    margin-left: 30%;
+}
+.engineer{
+    margin-left: 50%;
+}
+.engineer-one{
+    font-weight: 800;
+}
+.btn{
+    position: absolute;
+    display:flex;
+    right: 30px;
+    bottom: 50px;
+    
+
+}
+.btn{
+    font-size:larger;
+    padding: 9px ;
+    border:3px solid rgb(219, 219, 22);
+    background-color: yellow;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.btn:active{
+    padding: 20px ;
+}
+.right-side button{
+    font-size:x-large;
+    z-index: 100;
+    cursor:pointer;
+    font-weight: 700;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    padding: 10px 20px;
+    background-color: yellow;
+    border:none;
+}
+.right-side button:active{
+    padding: 30px;
+}

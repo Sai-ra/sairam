@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(orangered,aqua);
+    }
+    .container{
+        width: 400px;
+        height: 700px;
+        border-radius: 14px;
+        border:solid 2px grey;
+        box-shadow:3px 3px 3px black;
+        position:absolute;
+        background-color: rgb(223, 206, 206);
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .upper{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+    .upper button{
+        font-size: large;
+        font-style:arial;
+        padding:10px;
+        background-color: rgb(213, 86, 22);
+        border-radius: 20px;
+        border:none;
+        outline:none;
+        font-style: 'poppins';
+        transition:
+        all 300ms;
+        z-index:1;
+        position:relative;
+    }
+    .upper button:hover{
+        cursor:pointer;
+    }
+    .upper button:active{
+        background-color:rgb(250, 245, 245);
+    }
+    .upper button::after{
+        content:'';
+        width: 100%;
+        height:100%;
+        background-color: aqua;
+        position:absolute;
+        left:0;
+        top:0;
+        border-radius:20px;
+        z-index: -1;
+        transform:scale(0) ;
+        transform-origin: right;
+    }
+    .upper button:hover::after{
+      transform: scale(1) ;
+      transform-origin: left;
+    }
+    .upper button a{
+        color:black;
+        text-decoration:none;
+       
+    }
+    .photo-one{
+        text-align:center;
+    }
+    .photo-one img{
+        width: 200px;
+        border-radius: 50%;
+        border:solid 4px rgb(43, 199, 199);
+        transition:all 300ms;
+    }
+    .photo-one img:hover{
+        transform: scale(1.3);
+        border: 6px solid rgb(4, 4, 85);
+
+
+    }
+    .lower{
+        margin-top: 20px;
+    }
+    .lower p{
+        font-size:larger;
+        margin: 10px;
+    }
+.darker{
+    font-weight: bolder;
+}
+.button-section {
+    text-align:center;
+}
+.button-section button{
+ 
+ border-radius: 9px;
+    margin-top: 20px;
+    border:none;
+    font-size:x-large;
+    font-weight: 500;
+    background-color: rgb(240, 240, 10);
+    font-style:italic;
+    padding:15px 40px 15px 40px;
+}
+</style>
+    <head>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper"><button><a href="mybatch.html">Back</a> </button><button><a href="firsrpage.html">Home</a></button>
+            </div>
+            <div class="photo-one">
+                <img src="unknownphoto.jpeg" alt="">
+                <h1>P.HrushiKeshavi</h1>
+
+            </div>
+            <div class="lower">
+                <p>Father Name:Gangdhar</p>
+                <p>Course:B.tech</p>
+                <p>D.O.B:14-09-2004</p>
+                <p>Batch:2022-2026</p>
+                <p>Arearrs:--_____</p>
+                <p>Status:2<sup>nd</sup>-year</p>
+                <p>Percentage:<span class="darker">67%</span></p>
+                <p><span class="darker">NSS-Member</span></p>
+            </div>
+            <div class="button-section">
+                <button>THANK YOU!</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
